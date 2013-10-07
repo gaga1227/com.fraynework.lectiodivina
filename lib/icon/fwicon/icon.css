@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* ----------------------------------------------------------------------------------- 
+   @font-face definition
+   ----------------------------------------------------------------------------------- */
+
+@font-face { 
+	font-family:"fwicon"; 
+	src:url('fwicon.ttf') format('truetype'), 
+		url('fwicon.svg#fwicon') format('svg'); 
+	font-weight:normal; 
+	font-style:normal; }
+
+/* ----------------------------------------------------------------------------------- 
+   icon generic
+   ----------------------------------------------------------------------------------- */
+   
+[class^="fwicon-"]:before,
+[class*=" fwicon-"]:before { 
+	font-family:'fwicon'; 
+	font-style:normal; 
+	font-weight:normal; 
+	text-align:center; 
+	text-decoration:none;
+	-webkit-font-smoothing: antialiased;
+	speak:none; }
+
+/* ----------------------------------------------------------------------------------- 
+   fwicon classes
+   ----------------------------------------------------------------------------------- */
+
+.fwicon-star:before				{ content: "\e000"; }
+.fwicon-plus:before				{ content: "\e001"; }
+.fwicon-mug:before				{ content: "\e002"; }
+.fwicon-minus:before			{ content: "\e003"; }
+.fwicon-house:before			{ content: "\e004"; }
+.fwicon-cutlery:before			{ content: "\e005"; }
+.fwicon-clock:before			{ content: "\e006"; }
+.fwicon-clipboard:before		{ content: "\e007"; }
+.fwicon-chat:before				{ content: "\e008"; }
