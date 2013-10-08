@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     	= "http://www.w3.org/ns/widgets"
         xmlns:gap 	= "http://phonegap.com/ns/1.0"
-        id        	= "com.fraynework.acu2013"
+        id        	= "com.fraynework.lectiodivina"
         versionCode = "1"
 		version   	= "1.0.0">
 	<!-- versionCode is optional and Android only -->
 	
     <!-- The name of the application -->
-	<name>ICCEL 2013</name>
+	<name>Lectio Divina</name>
 	<!-- A description for your application -->
     <description>
-        6th International Conference on Catholic Educational Leadership 2013
+        Lectio Divina App for Diocese of Broken Bay (DBB)
     </description>
 	<!-- Author -->
     <author href="http://www.fraynework.com.au" email="contact@fraynework.com.au">
