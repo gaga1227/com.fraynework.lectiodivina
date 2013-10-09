@@ -162,54 +162,28 @@ body {
 /* -------------------------------------------------------------------------- */
 /* container */
 .pageNav {
-	position:absolute; top:0; left:0; width:100%; height:50px; margin:0; padding:0; overflow:hidden; }
+	position:absolute; top:50%; left:0; width:50px; height:100px; margin:-50px 0 0 0; padding:0; overflow:hidden; }
 
-	/* -------------------------------------------------------------------------- */
-	/* navTabs */
-	.pageNav .navTabs {
-		width:auto; height:auto; margin:0; padding:0; overflow:hidden; }
-
-		/* btnTab */
-		.pageNav .navTabs .btnTab {
-			display:block; position:absolute; top:0; width:auto; height:50px; margin:0; padding:10px 0 0 0; overflow:hidden;
-			border-left:1px solid #3e3e3e; border-top:1px solid #3e3e3e;
-			white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
-			font-family:'Montserrat',sans-serif; font-weight:400; line-height:1em; text-align:center;
-			/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
-
-		/* extend - btnTab x 3 */
-		.pageNav .btnTab:first-child 	{ left:0; 		width:33.33%; border-left:none; }
-		.pageNav .btnTab:nth-child(2)	{ left:33.33%; 	width:34%; }
-		.pageNav .btnTab:last-child 	{ right:0; 		width:33.33%; }
-
-			/* label */
-			.pageNav .navTabs .btnTab .label,
-			.pageNav .navTabs .btnTab .sublabel { display:block; }
-			.pageNav .navTabs .btnTab .label 	{ color:rgba(255,255,255,0.3); font-size:15px; }
-			.pageNav .navTabs .btnTab .sublabel { color:rgba(255,255,255,0.2); font-size:11px; }
-
-		/* interaction */
-
-		/* active */
-		.pageNav .navTabs .btnTab.active 					{ background:#006bcc; border-color:#006bcc; z-index:4; }
-		.pageNav .navTabs .btnTab.active .label,
-		.pageNav .navTabs .btnTab.active .sublabel 			{ color:rgba(255,255,255,1); }
-
-		/* current */
-		.pageNav .navTabs .btnTab.current					{ background:#00549f; border-color:#00549f; pointer-events:none; z-index:3; }
-		.pageNav .navTabs .btnTab.current .label 			{ color:rgba(255,255,255,1); }
-		.pageNav .navTabs .btnTab.current .sublabel 		{ color:rgba(255,255,255,0.5); }
-
-		/* custom: only-child */
-		.pageNav .btnTab:only-child {
-			position:relative; top:auto; left:auto; right:auto; width:100%; padding:0;
-			border-left:none; text-align:left; }
-			.pageNav .btnTab:only-child .label,
-			.pageNav .btnTab:only-child .sublabel {
-				display:inline-block;
-				font-size:16px; line-height:50px }
-			.pageNav .btnTab:only-child .label {
-				margin:0 10px 0 20px; font-weight:700; }
+	/* navItem */
+	.pageNav .navItem {
+		display:block; position:relative; width:50px; height:50px; margin:0; padding:0; overflow:hidden;
+		color:#fff; background:#252525; border-top:1px solid rgba(255,255,255,0.15);
+		/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+	.pageNav .navItem:first-child { 
+		border-top:none; }
+		
+		/* icon */
+		.pageNav .navItem .icon { 
+			top:0; left:0; width:100%; height:100%; 
+			font-size:28px; line-height:50px; }
+		
+	/* interaction */
+	.pageNav .navItem.active { 
+		background:#2899ff; border-color:#2899ff; }
+	.pageNav .navItem.disabled,
+	.pageNav .navItem.disabled.active { 
+		color:#666; background:#252525; border-color:rgba(255,255,255,0.15);
+		pointer-events:none; cursor:default; }
 
 
 /* ==========================================================================
@@ -626,8 +600,18 @@ section,
 			
 			/* -------------------------------------------------------------------------- */
 			/* pageContent */
-			#pgWeeks .pageHeader + .pageContent { top:80px; }
+			#pgWeeks .pageHeader + .pageContent { 
+				top:80px; 
+				-webkit-perspective:800px; perspective:800px;
+				-webkit-transform-style:preserve-3d; transform-style:preserve-3d; }
 			
+				/* scroller */
+				#pgWeeks .pageContent > [data-role="article"] > .scroller { 
+					position:absolute; top:0; left:0; bottom:0; width:100%; }
+					
+				/* padded */
+				#pgWeeks .pageContent > [data-role="article"] > .scroller > .padded { 
+					padding-left:100px; }
 			
 
 /* ==========================================================================
