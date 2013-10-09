@@ -74,6 +74,14 @@ body {
 	/* interaction */
 	#nav .navItem.active { 
 		background:#2899ff; border-color:#2899ff; }
+		
+	/* current */
+	#nav .navItem.current { pointer-events:none; cursor:default; }
+	#nav .navItem:nth-child(1).current { background:#b14bca; border-color:#b14bca; }
+	#nav .navItem:nth-child(2).current { background:#ff3b2f; border-color:#ff3b2f; }
+	#nav .navItem:nth-child(3).current { background:#ff9501; border-color:#ff9501; }
+	#nav .navItem:nth-child(4).current { background:#49be1f; border-color:#49be1f; }
+	#nav .navItem:nth-child(5).current { background:#007aff; border-color:#007aff; }
 	
 	/* -------------------------------------------------------------------------- */
 	/* btnMenu */
@@ -580,6 +588,47 @@ section,
 	-o-transform:scale(1);
 	transform:scale(1); }
 
+
+/* ==========================================================================
+   page - WEEKS
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* container */
+#pgWeeks {  }
+
+	/* -------------------------------------------------------------------------- */
+	/* sectionScroller */
+	#pgWeeks .sectionScroller { white-space:nowrap; }
+
+	/* sectionWrapper */
+	#pgWeeks .sectionWrapper { display:table; }
+		
+		/* section */  
+		#pgWeeks .sectionWrapper [data-role="section"] { 
+			display:inline-block; position:relative; vertical-align:top;
+			white-space:normal; }
+		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(1) { background:#b14bca; }
+		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(2) { background:#ff3b2f; }
+		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(3) { background:#ff9501; }
+		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(4) { background:#49be1f; }
+		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(5) { background:#007aff; }
+
+			/* -------------------------------------------------------------------------- */
+			/* pageHeader */
+			#pgWeeks .pageHeader { 
+				height:80px; background:rgba(255,255,255,0.2); }
+   				
+				/* headerTitle */
+				#pgWeeks .pageHeader .headerTitle { 
+					margin-left:100px; 
+					font-family:'chaparral',serif; font-size:32px; font-weight:700; line-height:80px; }
+			
+			/* -------------------------------------------------------------------------- */
+			/* pageContent */
+			#pgWeeks .pageHeader + .pageContent { top:80px; }
+			
+			
 
 /* ==========================================================================
    Common Styles
