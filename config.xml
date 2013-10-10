@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     	= "http://www.w3.org/ns/widgets"
         xmlns:gap 	= "http://phonegap.com/ns/1.0"
-        id        	= "com.fraynework.lectiodivina"
+        id        	= "com.fraynework.lectiodivina2013"
         versionCode = "1"
 		version   	= "1.0.0">
 	<!-- versionCode is optional and Android only -->
 	
     <!-- The name of the application -->
-	<name>Lectio Divina</name>
+	<name>Lectio Divina 2013</name>
 	<!-- A description for your application -->
     <description>
         Lectio Divina App for Diocese of Broken Bay (DBB)
