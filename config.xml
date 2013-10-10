@@ -16,7 +16,7 @@
     <author href="http://www.fraynework.com.au" email="contact@fraynework.com.au">
         Fraynework Limited
     </author>
-
+	
 	<!-- 
 		feature element can be used to specify which features your application is using,
 		more info on https://build.phonegap.com/docs/config-xml
@@ -34,6 +34,10 @@
 	<feature name="http://api.phonegap.com/1.0/notification"/>
 	
 	<!-- Plugins -->
+	
+	<!-- Platforms -->
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
 	
 	<!-- Perfs: multi-platform -->
     <preference name="phonegap-version" value="2.9.0" />
