@@ -28,31 +28,34 @@
 	<feature name="http://api.phonegap.com/1.0/geolocation" />
 	<feature name="http://api.phonegap.com/1.0/battery"/>
 	<feature name="http://api.phonegap.com/1.0/camera"/>
-	<feature name="http://api.phonegap.com/1.0/media"/> 
 	-->
+	<feature name="http://api.phonegap.com/1.0/media"/> 
 	<feature name="http://api.phonegap.com/1.0/network"/>
 	<feature name="http://api.phonegap.com/1.0/notification"/>
 	
 	<!-- Plugins -->
+	<gap:plugin name="com.phonegap.plugin.statusbar" />
 	
 	<!-- Platforms -->
 	<gap:platform name="ios" />
 	<gap:platform name="android" />
 	
 	<!-- Perfs: multi-platform -->
-    <preference name="phonegap-version" value="2.9.0" />
-    <preference name="orientation"      value="default" />
-    <preference name="target-device"    value="tablet" />
-    <preference name="fullscreen"       value="false" />
+    <preference name="phonegap-version"				value="3.1.0" />
+    <preference name="orientation"					value="landscape" />
+    <preference name="target-device"				value="tablet" />
+    <preference name="fullscreen"					value="false" />
 	<!-- Perfs: iOS -->
-	<preference name="prerendered-icon" value="true" /><!-- stop glossy effect to be added to icon -->
-	<preference name="detect-data-types" value="false" /><!-- whether certain data types (e.g. phone, dates) are turned into links -->
-	<preference name="webviewbounce" value="false" /><!-- controls whether the screen "bounces" when scrolled beyond the top or bottom on iOS. -->
-	<preference name="stay-in-webview" value="false" /><!-- all links (even with target set to blank) will open in the app's webview -->
-	<preference name="exit-on-suspend" value="false" /><!-- app will terminate when suspended -->
+	<preference name="prerendered-icon" 			value="true" />					<!-- stop glossy effect to be added to icon -->
+	<preference name="detect-data-types" 			value="false" />				<!-- whether certain data types (e.g. phone, dates) are turned into links -->
+	<preference name="webviewbounce" 				value="false" />				<!-- controls whether the screen "bounces" when scrolled beyond on iOS. -->
+	<preference name="ios-statusbarstyle" 			value="black-opaque" />			<!-- Set the iOS status bar style -->	
+	<preference name="stay-in-webview" 				value="true" />					<!-- all links (even with target set to blank) will open in the app's webview -->
+	<preference name="exit-on-suspend" 				value="false" />				<!-- app will terminate when suspended -->
 	<!-- Perfs: Android -->
-	<preference name="android-installLocation" value="internalOnly" /><!-- install location (internalOnly, auto or preferExternal) -->
-	<preference name="android-minSdkVersion" value="14" />
+	<preference name="android-installLocation"		value="internalOnly" />			<!-- install location (internalOnly, auto or preferExternal) -->
+	<preference name="android-windowSoftInputMode"	value="stateAlwaysHidden" />	<!-- How main window interacts with soft keyboard -->
+	<preference name="android-minSdkVersion"		value="14" />
 	
 	<!-- Icon: iOS -->
 	<!--
@@ -68,7 +71,7 @@
     <icon src="res/icon/android/icon-hdpi.png"		gap:platform="android"		gap:density="hdpi" />
     <icon src="res/icon/android/icon-xhdpi.png"		gap:platform="android"		gap:density="xhdpi" />
 	
-    <!-- Screen: iOS -->
+    <!-- Splash: iOS -->
 	<!--
 	<gap:splash src="res/screen/ios/screen-iphone-portrait.png"		gap:platform="ios"	width="320" height="480" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"	gap:platform="ios"	width="640" height="960" />
@@ -79,11 +82,11 @@
 	<gap:splash src="res/screen/ios/screen-ipad-landscape-2x.png" 	gap:platform="ios" 	width="2048" height="1496" />
 	<gap:splash src="res/screen/ios/screen-ipad-portrait-2x.png" 	gap:platform="ios" 	width="1536"  height="2008" />
 
-	<!-- Screen: android -->
-    <gap:splash src="res/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+	<!-- Splash: android -->
+    <gap:splash src="res/screen/android/screen-tablet.png" gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="res/screen/android/screen-tablet.png" gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="res/screen/android/screen-tablet.png" gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="res/screen/android/screen-tablet.png" gap:platform="android" gap:density="xhdpi" />
 	
 	<!-- Access -->
 	<access origin="*" browserOnly="false" />
