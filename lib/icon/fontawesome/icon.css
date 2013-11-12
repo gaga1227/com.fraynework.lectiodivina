@@ -425,3 +425,11 @@
 @-ms-keyframes spin		{ 0% { -ms-transform:rotate(0deg); }		100% { -ms-transform:rotate(359deg); } }
 @-o-keyframes spin 		{ 0% { -o-transform:rotate(0deg); } 		100% { -o-transform:rotate(359deg); } }
 @keyframes spin			{ 0% { transform:rotate(0deg); }			100% { transform:rotate(359deg); } }
+
+/* rotations and mirroring */
+.icon-rotate-90 		{ -webkit-transform:rotate(90deg); transform:rotate(90deg); }
+.icon-rotate-180 		{ -webkit-transform:rotate(180deg); transform:rotate(180deg); }
+.icon-rotate-270 		{ -webkit-transform:rotate(270deg);	transform:rotate(270deg); }
+.icon-flip-horizontal 	{ -webkit-transform:scale(-1, 1); transform:scale(-1, 1); }
+.icon-flip-vertical 	{ -webkit-transform:scale(1, -1); transform:scale(1, -1); }
+	

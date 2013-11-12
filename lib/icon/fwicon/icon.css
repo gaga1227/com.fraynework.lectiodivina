@@ -27,13 +27,13 @@
 /* ----------------------------------------------------------------------------------- 
    fwicon classes
    ----------------------------------------------------------------------------------- */
-
-.fwicon-star:before				{ content: "\e000"; }
-.fwicon-plus:before				{ content: "\e001"; }
-.fwicon-mug:before				{ content: "\e002"; }
-.fwicon-minus:before			{ content: "\e003"; }
-.fwicon-house:before			{ content: "\e004"; }
-.fwicon-cutlery:before			{ content: "\e005"; }
-.fwicon-clock:before			{ content: "\e006"; }
-.fwicon-clipboard:before		{ content: "\e007"; }
-.fwicon-chat:before				{ content: "\e008"; }
+   
+.fwicon-star:before 			{ content: "\e000"; }
+.fwicon-speaker-on:before 		{ content: "\e001"; }
+.fwicon-speaker-off:before		{ content: "\e002"; }
+.fwicon-speaker-disable:before	{ content: "\e003"; }
+.fwicon-quotes:before 			{ content: "\e004"; }
+.fwicon-info:before 			{ content: "\e005"; }
+.fwicon-home:before 			{ content: "\e006"; }
+.fwicon-crown:before 			{ content: "\e007"; }
+.fwicon-book:before 			{ content: "\e008"; }

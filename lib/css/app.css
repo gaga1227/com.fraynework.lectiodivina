@@ -1,4 +1,4 @@
-/* ==========================================================================
+4/* ==========================================================================
    Base styles: opinionated defaults
    Author: JX 20130127 (Adapted from HTML5 Boilerplate 4)
    ========================================================================== */
@@ -398,7 +398,7 @@ section,
 	font-family:'Alegreya',serif; font-size:13px; font-weight:400; line-height:20px;
 	text-decoration:none!important; }
 	.btnBox .label { text-decoration:none!important; }
-	.btnBox .iconInline { font-size:12px; vertical-align:text-top; }
+	.btnBox .iconInline { font-size:14px; vertical-align:text-top; }
 
 /* interaction */
 .btnBox.active { color:#00549f!important; background:#fff; border-color:#fff; }
