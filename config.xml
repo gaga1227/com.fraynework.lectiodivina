@@ -7,7 +7,7 @@
 	<!-- versionCode is optional and Android only -->
 	
     <!-- The name of the application -->
-	<name>Lectio Divina 2013</name>
+	<name>Lectio Divina</name>
 	<!-- A description for your application -->
     <description>
         Lectio Divina App for Diocese of Broken Bay (DBB)
@@ -34,7 +34,7 @@
 	<feature name="http://api.phonegap.com/1.0/notification"/>
 	
 	<!-- Plugins -->
-	<gap:plugin name="com.phonegap.plugin.statusbar" />
+	<!-- <gap:plugin name="com.phonegap.plugin.statusbar" /> -->
 	
 	<!-- Platforms -->
 	<gap:platform name="ios" />
@@ -44,17 +44,17 @@
     <preference name="phonegap-version"				value="3.1.0" />
     <preference name="orientation"					value="landscape" />
     <preference name="target-device"				value="tablet" />
-    <preference name="fullscreen"					value="false" />
+    <preference name="fullscreen"					value="true" />
 	<!-- Perfs: iOS -->
 	<preference name="prerendered-icon" 			value="true" />					<!-- stop glossy effect to be added to icon -->
 	<preference name="detect-data-types" 			value="false" />				<!-- whether certain data types (e.g. phone, dates) are turned into links -->
 	<preference name="webviewbounce" 				value="false" />				<!-- controls whether the screen "bounces" when scrolled beyond on iOS. -->
-	<preference name="ios-statusbarstyle" 			value="black-opaque" />			<!-- Set the iOS status bar style -->	
+	<!--<preference name="ios-statusbarstyle" 			value="black-opaque" />			 Set the iOS status bar style -->	
 	<preference name="stay-in-webview" 				value="true" />					<!-- all links (even with target set to blank) will open in the app's webview -->
 	<preference name="exit-on-suspend" 				value="false" />				<!-- app will terminate when suspended -->
 	<!-- Perfs: Android -->
 	<preference name="android-installLocation"		value="internalOnly" />			<!-- install location (internalOnly, auto or preferExternal) -->
-	<preference name="android-windowSoftInputMode"	value="stateAlwaysHidden" />	<!-- How main window interacts with soft keyboard -->
+	<!--<preference name="android-windowSoftInputMode"	value="stateAlwaysHidden" />	 How main window interacts with soft keyboard -->
 	<preference name="android-minSdkVersion"		value="14" />
 	
 	<!-- Icon: iOS -->
