@@ -21,7 +21,7 @@
 		feature element can be used to specify which features your application is using,
 		more info on https://build.phonegap.com/docs/config-xml
 	-->
-    <feature name="http://api.phonegap.com/3.0/device" />
+    <feature name="http://api.phonegap.com/3.1.0/device" />
 	<!--
 	<feature name="http://api.phonegap.com/1.0/contacts" />
 	<feature name="http://api.phonegap.com/1.0/file"/>
@@ -30,9 +30,8 @@
 	<feature name="http://api.phonegap.com/1.0/camera"/>
 	<feature name="http://api.phonegap.com/3.0/media"/> 
 	-->
-	
-	<feature name="http://api.phonegap.com/3.0/network"/>
-	<feature name="http://api.phonegap.com/3.0/notification"/>
+	<feature name="http://api.phonegap.com/3.1.0/network"/>
+	<feature name="http://api.phonegap.com/3.1.0/notification"/>
 	
 	<!-- Plugins -->
 	<!-- <gap:plugin name="com.phonegap.plugin.statusbar" /> -->
@@ -42,7 +41,7 @@
 	<gap:platform name="android" />
 	
 	<!-- Perfs: multi-platform -->
-    <preference name="phonegap-version"				value="3.0.0" />
+    <preference name="phonegap-version"				value="3.1.0" />
     <preference name="orientation"					value="landscape" />
     <preference name="target-device"				value="tablet" />
     <preference name="fullscreen"					value="true" />
@@ -50,7 +49,7 @@
 	<preference name="prerendered-icon" 			value="true" />					<!-- stop glossy effect to be added to icon -->
 	<preference name="detect-data-types" 			value="false" />				<!-- whether certain data types (e.g. phone, dates) are turned into links -->
 	<preference name="webviewbounce" 				value="false" />				<!-- controls whether the screen "bounces" when scrolled beyond on iOS. -->
-	<preference name="stay-in-webview" 				value="true" />					<!-- all links (even with target set to blank) will open in the app's webview -->
+	<preference name="stay-in-webview" 				value="false" />				<!-- all links (even with target set to blank) will open in the app's webview -->
 	<preference name="exit-on-suspend" 				value="false" />				<!-- app will terminate when suspended -->
 	<!-- Perfs: Android -->
 	<preference name="android-installLocation"		value="internalOnly" />			<!-- install location (internalOnly, auto or preferExternal) -->
@@ -77,9 +76,9 @@
 	<gap:splash src="res/screen/ios/screen-iphone-portrait-ip5.png"	gap:platform="ios"	width="640" height="1136" />
 	-->
 	<gap:splash src="res/screen/ios/screen-ipad-landscape.png" 		gap:platform="ios" 	width="1024" height="748" />
-	<gap:splash src="res/screen/ios/screen-ipad-portrait.png" 		gap:platform="ios" 	width="768"  height="1004" />
+	<!-- <gap:splash src="res/screen/ios/screen-ipad-portrait.png" 		gap:platform="ios" 	width="768"  height="1004" /> -->
 	<gap:splash src="res/screen/ios/screen-ipad-landscape-2x.png" 	gap:platform="ios" 	width="2048" height="1496" />
-	<gap:splash src="res/screen/ios/screen-ipad-portrait-2x.png" 	gap:platform="ios" 	width="1536"  height="2008" />
+	<!-- <gap:splash src="res/screen/ios/screen-ipad-portrait-2x.png" 	gap:platform="ios" 	width="1536"  height="2008" /> -->
 
 	<!-- Splash: android -->
     <gap:splash src="res/screen/android/screen-tablet.png" gap:platform="android" gap:density="ldpi" />
