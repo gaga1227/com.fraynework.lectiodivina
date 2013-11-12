@@ -41,7 +41,7 @@
 	<gap:platform name="android" />
 	
 	<!-- Perfs: multi-platform -->
-    <preference name="phonegap-version"				value="3.1.0" />
+    <preference name="phonegap-version"				value="3.0.0" />
     <preference name="orientation"					value="landscape" />
     <preference name="target-device"				value="tablet" />
     <preference name="fullscreen"					value="true" />
@@ -76,8 +76,8 @@
 	<gap:splash src="res/screen/ios/screen-iphone-portrait-ip5.png"	gap:platform="ios"	width="640" height="1136" />
 	-->
 	<gap:splash src="res/screen/ios/screen-ipad-landscape.png" 		gap:platform="ios" 	width="1024" height="748" />
-	<!-- <gap:splash src="res/screen/ios/screen-ipad-portrait.png" 		gap:platform="ios" 	width="768"  height="1004" /> -->
 	<gap:splash src="res/screen/ios/screen-ipad-landscape-2x.png" 	gap:platform="ios" 	width="2048" height="1496" />
+	<!-- <gap:splash src="res/screen/ios/screen-ipad-portrait.png" 		gap:platform="ios" 	width="768"  height="1004" /> -->
 	<!-- <gap:splash src="res/screen/ios/screen-ipad-portrait-2x.png" 	gap:platform="ios" 	width="1536"  height="2008" /> -->
 
 	<!-- Splash: android -->
