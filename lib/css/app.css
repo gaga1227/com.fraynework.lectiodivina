@@ -366,6 +366,8 @@ section,
 .scroller { overflow:scroll; }
 /* native scroll for iOS */
 .ios [data-role="scroller"] { -webkit-overflow-scrolling:touch; }
+/* using iscroll for articles */
+.ios #pgWeeks article [data-role="scroller"] { overflow:hidden; }
 
 
 /* ==========================================================================
