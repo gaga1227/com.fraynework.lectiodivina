@@ -21,7 +21,7 @@
 		feature element can be used to specify which features your application is using,
 		more info on https://build.phonegap.com/docs/config-xml
 	-->
-    <feature name="http://api.phonegap.com/3.1.0/device" />
+    <feature name="http://api.phonegap.com/3.0/device" />
 	<!--
 	<feature name="http://api.phonegap.com/1.0/contacts" />
 	<feature name="http://api.phonegap.com/1.0/file"/>
@@ -30,8 +30,8 @@
 	<feature name="http://api.phonegap.com/1.0/camera"/>
 	<feature name="http://api.phonegap.com/3.0/media"/> 
 	-->
-	<feature name="http://api.phonegap.com/3.1.0/network"/>
-	<feature name="http://api.phonegap.com/3.1.0/notification"/>
+	<feature name="http://api.phonegap.com/3.0/network"/>
+	<feature name="http://api.phonegap.com/3.0/notification"/>
 	
 	<!-- Plugins -->
 	<!-- <gap:plugin name="com.phonegap.plugin.statusbar" /> -->
