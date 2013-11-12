@@ -48,6 +48,13 @@
 <script src="lib/js/app.js"></script>
 <script>
 $(function() { FastClick.attach(document.body); });
+
+var my_media = new Howl({
+  urls: ['data/test.mp3'],
+  autoplay: true,
+  loop: false,
+  volume: 0.5
+});
 </script>
 </body>
 </html>
