@@ -33,7 +33,7 @@
 	<gap:platform name="android" />
 	
 	<!-- Perfs: multi-platform -->
-    <preference name="phonegap-version"				value="3.0.0" />
+    <preference name="phonegap-version"				value="2.9.0" />
     <preference name="orientation"					value="landscape" />
     <preference name="target-device"				value="tablet" />
     <preference name="fullscreen"					value="true" />
