@@ -58,18 +58,18 @@ body {
 /* container */
 #nav { 
 	position:absolute; top:0; right:0; width:100%; height:50px; margin:0; padding:0; overflow:hidden;
-	background:#252525; }
+	background:#252525; text-align:center; }
 	
 	/* -------------------------------------------------------------------------- */
 	/* item */
 	#nav .navItem { 
-		display:inline-block; width:auto; height:50px; margin:0; padding:0; overflow:hidden; float:left;
-		color:#fff; border-right:1px solid rgba(255,255,255,0.15); 
-		font-size:16px; line-height:50px; text-align:center; text-transform:uppercase; }
+		display:inline-block; width:auto; height:50px; margin:0; padding:0; overflow:hidden;
+		color:#fff; 
+		font-family:'LeagueGothic',sans-serif; font-size:18px; line-height:50px; text-align:center; text-transform:uppercase; }
 		
 		/* label */		
 		#nav .navItem .label { 
-			margin:0 30px; }
+			margin:0 15px; }
 	
 	/* interaction */
 	#nav .navItem.active { 
@@ -86,8 +86,8 @@ body {
 	/* -------------------------------------------------------------------------- */
 	/* btnMenu */
 	#nav .btnMenu { 
-		position:relative; display:block; width:50px; height:50px; margin:0; padding:0; overflow:hidden; float:right; clear:right;
-		color:#fff; border-left:1px solid rgba(255,255,255,0.15); }
+		display:block; position:absolute; top:0; left:0; width:50px; height:50px; margin:0; padding:0; overflow:hidden;
+		color:#fff; }
 		
 		/* icon */
 		#nav .btnMenu .icon { 
@@ -99,8 +99,9 @@ body {
 		background:#2899ff; border-color:#2899ff; }
 
 /* -------------------------------------------------------------------------- */
-/* nav.extra */
-#nav.extra .navItem { display:none; }
+/* variations */
+#nav.week .navItem.btnExtra { display:none; }
+#nav.extra .navItem.btnWeek { display:none; }
 
 
 /* ==========================================================================
@@ -436,7 +437,7 @@ section,
 /* -------------------------------------------------------------------------- */
 /* intro */
 #pgHome .intro { 
-	padding-top:40px; text-align:center;
+	padding-top:0; text-align:center;
 	font-family:'LeagueGothic',sans-serif; font-weight:400; }
 	
 	/* title */
@@ -455,7 +456,6 @@ section,
 
 	/* default */
 	#pgHome .intro > * {
-		letter-spacing:3px;
 		opacity:0;
 		/*transform*/
 		-webkit-transform:translate(0,-20px);
@@ -466,7 +466,6 @@ section,
 
 	/* active */
 	#pgHome .intro.active > * {
-		letter-spacing:0;
 		opacity:1;
 		/*transform*/
 		-webkit-transform:translate(0,0);
@@ -477,7 +476,7 @@ section,
 /* -------------------------------------------------------------------------- */
 /* nav */
 #pgHome .nav {
-	display:block; position:relative; width:100%; height:300px; margin:10px 0 0 0; padding:0; overflow:hidden;
+	display:block; position:relative; width:100%; height:160px; margin:10px 0 0 0; padding:0; overflow:hidden;
 	opacity:0;
 	/*transition*/
 	/*-webkit-transform:translate3d(0,0,0);*/
@@ -509,7 +508,7 @@ section,
 	/* -------------------------------------------------------------------------- */
 	/* item */
 	#pgHome .nav .navItem {
-		display:block; position:relative; width:20%; height:300px; margin:0; padding:20px; overflow:hidden; float:left;
+		display:block; position:relative; width:20%; height:160px; margin:0; padding:20px; overflow:hidden; float:left;
 		color:#fff; background:rgba(0,0,0,0.3); border-left:1px solid #00549f;
 		/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 	#pgHome .nav .navItem:first-child { border-left:none; }
@@ -517,14 +516,14 @@ section,
 		/* label */
 		#pgHome .nav .navItem .label {
 			display:block; width:auto; height:auto; margin:0; padding:0; overflow:hidden;
-			opacity:0.5; text-transform:uppercase; text-align:center;
-			font-family:'Alegreya',serif; font-size:16px; font-weight:400; line-height:2em;  }
+			opacity:0.5; text-transform:capitalize; text-align:center;
+			font-family:'Alegreya',serif; font-size:14px; font-weight:400; line-height:2em; }
 			
 		/* sublabel */
 		#pgHome .nav .navItem .sublabel {
-			display:block; width:auto; height:auto; margin:1em 0 0 0; padding:0; overflow:hidden;
+			display:block; width:auto; height:auto; margin:0.6em 0 0 0; padding:0; overflow:hidden;
 			text-transform:uppercase; text-align:center;
-			font-family:'Alegreya',serif; font-size:18px; font-weight:400; line-height:1.5em;  }
+			font-family:'Alegreya',serif; font-size:16px; font-weight:400; line-height:1.5em; }
 
 	/* interaction */
 	#pgHome .nav .navItem.active { color:#00549f; background:#fff; border-color:#fff; }
