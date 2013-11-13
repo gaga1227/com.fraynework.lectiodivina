@@ -303,7 +303,7 @@ body {
 	.contentView p.sml 			{ font-size:12px; font-weight:400; line-height:1.5em; margin:0 0 1em 0; padding:0; }
 
 	/* link */
-	.contentView a 				{ color:#fff; text-decoration:none!important; }
+	.contentView a 				{ color:#fff; text-decoration:underline; }
 
 	/* media */
 	.contentView img 			{ display:block; border:0; }
