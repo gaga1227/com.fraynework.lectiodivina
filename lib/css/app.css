@@ -99,9 +99,8 @@ body {
 		background:#2899ff; border-color:#2899ff; }
 
 /* -------------------------------------------------------------------------- */
-/* nav.compact */
-#nav.compact { background:rgba(0,0,0,0.1); }
-#nav.compact .navItem { display:none; }
+/* nav.extra */
+#nav.extra .navItem { display:none; }
 
 
 /* ==========================================================================
@@ -362,17 +361,15 @@ section,
    common - SCROLLER
    ========================================================================== */
 
-/* common */
-.scroller { overflow:scroll; }
-/* native scroll for iOS */
-.ios [data-role="scroller"] { -webkit-overflow-scrolling:touch; }
-/* using iscroll for articles */
-.ios #pgWeeks article [data-role="scroller"] { overflow:hidden; }
-
-
-/* ==========================================================================
-   common - CONTROLS
-   ========================================================================== */
+/* scroller */
+.scroller 							{ overflow:auto; }
+[data-role="scroller"]				{ overflow:hidden; }
+.ios [data-role="scroller"].native	{ overflow:scroll; -webkit-overflow-scrolling:touch; }
+	
+	/* scrollerContent */
+	[data-role="scrollerContent"] {
+		position:absolute; z-index:1;
+		-webkit-transform:translateZ(0); transform:translateZ(0); }
 
 
 /* ==========================================================================
@@ -714,6 +711,15 @@ section,
 .padRgt20           { padding-right:20px!important; }
 .padRgt25           { padding-right:25px!important; }
 .padRgt30           { padding-right:30px!important; }
+
+
+/* ==========================================================================
+   debug Styles
+   ========================================================================== */
+
+/* debugInfo */
+.debugInfo 			{ display:none!important; }
+.debug .debugInfo 	{ display:inline!important; }
 
 
 /* ==========================================================================
