@@ -615,7 +615,7 @@ section,
 #pgWeeks[data-landing="1"] .pageHeader + .pageContent { top:0; }
 
 /* pageNav */
-#pgWeeks[data-landing="1"] .pageNav { -webkit-transform:translate3d(-200%,0,0); transform:translate3d(-200%,0,0); }
+#pgWeeks[data-landing="1"] .pageNav { -webkit-transform:translate(-200%,0); transform:translate(-200%,0); }
 
 	/* -------------------------------------------------------------------------- */
 	/* articleContent */
