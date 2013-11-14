@@ -574,7 +574,9 @@ section,
 		/* section */  
 		#pgWeeks .sectionWrapper [data-role="section"] { 
 			display:inline-block; position:relative; vertical-align:top;
-			white-space:normal; }
+			white-space:normal;
+			-webkit-perspective:800px; perspective:800px;
+			-webkit-transform-style:preserve-3d; transform-style:preserve-3d; }
 		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(1) { background:#b14bca; }
 		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(2) { background:#ff3b2f; }
 		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(3) { background:#ff9501; }
@@ -584,8 +586,10 @@ section,
 			/* -------------------------------------------------------------------------- */
 			/* pageHeader */
 			#pgWeeks .pageHeader { 
-				-webkit-transition:-webkit-transform 0s ease-in-out, opacity 0s ease-in-out;
-				transition:transform 0s ease-in-out, opacity 0s ease-in-out; }
+				-webkit-transform-origin:0 0%;
+				transform-origin:0 0%;
+				-webkit-transition:-webkit-transform 0.6s ease-in-out, opacity 0.3s ease-in-out;
+				transition:transform 0.6s ease-in-out, opacity 0.3s ease-in-out; }
    				
 				/* headerTitle */
 				#pgWeeks .pageHeader .headerTitle { }
@@ -593,10 +597,6 @@ section,
 			/* -------------------------------------------------------------------------- */
 			/* pageContent */
 			#pgWeeks .pageHeader + .pageContent { 
-				-webkit-perspective:800px; perspective:800px;
-				-webkit-transform-style:preserve-3d; transform-style:preserve-3d;
-				/*transition*/
-				/*-webkit-transform:translate3d(0,0,0);*/
 				-webkit-transition:top 0s ease-in-out;
 				transition:top 0s ease-in-out; }
 			
@@ -611,13 +611,17 @@ section,
 /* landing */
 
 /* hide pageHeader */
-#pgWeeks.landing .pageHeader { opacity:0; }
+#pgWeeks.landing .pageHeader { 
+	opacity:0;
+	-webkit-transform:translate3d(0,40%,0) scale(1.2);
+	transform:translate3d(0,40%,0) scale(1.2); }
 
 /* move pageContent up */
 #pgWeeks.landing .pageHeader + .pageContent { top:0; }
 
 /* hide pageNav */
-#pgWeeks.landing .pageNav { -webkit-transform:translate3d(-60px,0,0); transform:translate3d(-60px,0,0); }
+#pgWeeks.landing .pageNav { 
+	-webkit-transform:translate3d(-120%,0,0); transform:translate3d(-120%,0,0); }
 
 	/* -------------------------------------------------------------------------- */
 	/* articleContent */
