@@ -129,33 +129,15 @@ body {
 /* -------------------------------------------------------------------------- */
 /* container */
 .pageHeader {
-	position:absolute; top:0; left:0; width:100%; height:50px; margin:0; padding:0; overflow:hidden; }
+	position:absolute; top:0; left:0; width:100%; height:140px; margin:0; padding:0; overflow:hidden;
+	/*background:rgba(255,255,255,0.2);*/  }
 
 	/* -------------------------------------------------------------------------- */
 	/* headerTitle */
 	.pageHeader .headerTitle {
-		display:block; width:auto; height:auto; margin:0 50px; padding:0; overflow:hidden;
-		color:#fff; white-space:nowrap; text-overflow:ellipsis;
-		font-family:'Alegreya',serif; font-size:15px; font-weight:400; line-height:50px; text-transform:capitalize; }
-
-	/* -------------------------------------------------------------------------- */
-	/* headerBtn */
-	.pageHeader .headerBtn {
-		display:block; position:absolute; top:0; width:50px; height:100%; margin:0; padding:0; overflow:hidden;
-		color:#666; }
-	.pageHeader .headerBtnLeft { left:0; }
-	.pageHeader .headerBtnRight { right:0; }
-
-		/* icon */
-		.pageHeader .headerBtn .icon {
-			top:50%; width:1em; height:1em; margin:-0.5em 0 0 -0.5em; padding:0; overflow:hidden;
-			font-size:22px; line-height:1em; }
-		.pageHeader .headerBtnLeft .icon { left:50%; }
-		.pageHeader .headerBtnRight .icon { right:50%; }
-
-	/* interaction */
-	.pageHeader .headerBtn.active {
-		color:#fff; }
+		display:block; width:auto; height:auto; margin:0 40px 0 100px; padding:0; overflow:hidden;
+		color:#fff; white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
+		font-family:'LeagueGothic',sans-serif; font-size:45px; font-weight:400; line-height:140px;  }
 
 
 /* ==========================================================================
@@ -205,8 +187,7 @@ body {
 .pageContent {
 	position:absolute; top:0; left:0; bottom:0; width:100%; height:auto; margin:0; padding:0; overflow:hidden; }
 .pageHeader + .pageNav,
-.pageHeader + .pageContent 				{ top:50px; }
-.pageHeader + .pageNav + .pageContent 	{ top:100px; }
+.pageHeader + .pageContent 	{ top:140px; }
 
 	/* -------------------------------------------------------------------------- */
 	/* scroller */
@@ -292,8 +273,8 @@ body {
 	.contentView h1 			{ font-size:40px; font-weight:300; line-height:1.2em; margin:0 0 0.5em 0; padding:0 0 0 0; }
 	.contentView h2 			{ font-size:35px; font-weight:300; line-height:1.2em; margin:0 0 0.5em 0; padding:0 0 0 0; }
 	.contentView h3 			{ font-size:25px; font-weight:400; line-height:1.2em; margin:0 0 0.5em 0; padding:0 0 0 0; }
-	.contentView h4 			{ font-size:16px; font-weight:700; line-height:1.5em; margin:0 0 1em 0; padding:0 0 0 0; }
-	.contentView h5 			{ font-size:15px; font-weight:700; line-height:1.5em; margin:0 0 1em 0; padding:0 0 0 0; }
+	.contentView h4 			{ font-size:20px; font-weight:700; line-height:1.5em; margin:0 0 1em 0; padding:0 0 0 0; }
+	.contentView h5 			{ font-size:18px; font-weight:700; line-height:1.5em; margin:0 0 1em 0; padding:0 0 0 0; }
 	
 	.contentView h1,
 	.contentView h2				{ font-family:'LeagueGothic',sans-serif; font-weight:400; }
@@ -303,8 +284,8 @@ body {
 	.contentView b 				{ font-weight:700; }
 	.contentView b,
 	.contentView em				{ font-style:italic; }
-	.contentView p 				{ font-size:15px; font-weight:400; line-height:1.5em; margin:0 0 1em 0; padding:0; }
-	.contentView p.sml 			{ font-size:12px; font-weight:400; line-height:1.5em; margin:0 0 1em 0; padding:0; }
+	.contentView p 				{ font-size:18px; font-weight:400; line-height:1.5em; margin:0 0 1em 0; padding:0; }
+	.contentView p.sml 			{ font-size:14px; font-weight:400; line-height:1.5em; margin:0 0 1em 0; padding:0; }
 
 	/* link */
 	.contentView a 				{ color:#fff; text-decoration:underline; }
@@ -313,7 +294,7 @@ body {
 	.contentView img 			{ display:block; border:0; }
 
 	/* list */
-	.contentView li 			{ font-size:15px; line-height:1.5em; margin:0 0 0 0; }
+	.contentView li 			{ font-size:18px; line-height:1.5em; margin:0 0 0 0; }
 	.contentView ol,
 	.contentView ul				{ margin:0 0 1em 0; padding:0 0 0 20px; }
 	.contentView ul				{ list-style-type:disc; }
@@ -355,7 +336,7 @@ section,
 
 /* padded box */
 .padded {
-	padding:40px;
+	padding:0 180px 40px 100px;
 	/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 .padded.compact {
 	padding:10px 20px; }
@@ -591,18 +572,14 @@ section,
 
 			/* -------------------------------------------------------------------------- */
 			/* pageHeader */
-			#pgWeeks .pageHeader { 
-				height:80px; background:rgba(255,255,255,0.2); }
+			#pgWeeks .pageHeader { }
    				
 				/* headerTitle */
-				#pgWeeks .pageHeader .headerTitle { 
-					margin-left:100px; 
-					font-family:'LeagueGothic',sans-serif; font-size:32px; font-weight:400; line-height:80px; }
+				#pgWeeks .pageHeader .headerTitle { }
 			
 			/* -------------------------------------------------------------------------- */
 			/* pageContent */
 			#pgWeeks .pageHeader + .pageContent { 
-				top:80px; 
 				-webkit-perspective:800px; perspective:800px;
 				-webkit-transform-style:preserve-3d; transform-style:preserve-3d; }
 			
@@ -611,8 +588,7 @@ section,
 					position:absolute; top:0; left:0; bottom:0; width:100%; }
 					
 				/* padded */
-				#pgWeeks .pageContent > [data-role="article"] > .scroller > .padded { 
-					padding-left:100px; }
+				#pgWeeks .pageContent > [data-role="article"] > .scroller > .padded {  }
 			
 
 /* ==========================================================================
