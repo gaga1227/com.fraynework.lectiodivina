@@ -611,16 +611,13 @@ section,
 /* landing */
 
 /* hide pageHeader */
-#pgWeeks[data-landing="1"] .pageHeader { opacity:0; }
-#pgWeeks[data-landing="0"] .pageHeader { opacity:1; }
+#pgWeeks.landing .pageHeader { opacity:0; }
 
 /* move pageContent up */
-#pgWeeks[data-landing="1"] .pageHeader + .pageContent { top:0; }
-#pgWeeks[data-landing="0"] .pageHeader + .pageContent { top:140px; }
+#pgWeeks.landing .pageHeader + .pageContent { top:0; }
 
 /* hide pageNav */
-#pgWeeks[data-landing="1"] .pageNav { -webkit-transform:translate3d(-60px,0,0); transform:translate3d(-60px,0,0); }
-#pgWeeks[data-landing="0"] .pageNav { -webkit-transform:translate3d(0,0,0); transform:translate3d(0,0,0); }
+#pgWeeks.landing .pageNav { -webkit-transform:translate3d(-60px,0,0); transform:translate3d(-60px,0,0); }
 
 	/* -------------------------------------------------------------------------- */
 	/* articleContent */
