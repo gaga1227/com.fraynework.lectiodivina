@@ -73,15 +73,18 @@ body {
 	
 	/* interaction */
 	#nav .navItem.active { 
-		background:#2899ff; border-color:#2899ff; }
+		background:#2899ff; }
 		
 	/* current */
-	#nav .navItem.current { pointer-events:none; cursor:default; }
-	#nav .navItem:nth-child(1).current { background:#b14bca; border-color:#b14bca; }
-	#nav .navItem:nth-child(2).current { background:#ff3b2f; border-color:#ff3b2f; }
-	#nav .navItem:nth-child(3).current { background:#ff9501; border-color:#ff9501; }
-	#nav .navItem:nth-child(4).current { background:#49be1f; border-color:#49be1f; }
-	#nav .navItem:nth-child(5).current { background:#007aff; border-color:#007aff; }
+	#nav .navItem.current 						{ pointer-events:none; cursor:default; }
+	
+	#nav .navItem.btnWeek:nth-child(1).current 	{ background:#b14bca; }
+	#nav .navItem.btnWeek:nth-child(2).current 	{ background:#ff3b2f; }
+	#nav .navItem.btnWeek:nth-child(3).current 	{ background:#ff9501; }
+	#nav .navItem.btnWeek:nth-child(4).current 	{ background:#49be1f; }
+	#nav .navItem.btnWeek:nth-child(5).current 	{ background:#007aff; }
+	
+	#nav .navItem.btnExtra.current 				{ background:#00549f; }
 	
 	/* -------------------------------------------------------------------------- */
 	/* btnMenu */
@@ -96,7 +99,7 @@ body {
 			
 	/* interaction */
 	#nav .btnMenu.active { 
-		background:#2899ff; border-color:#2899ff; }
+		background:#2899ff; }
 
 /* -------------------------------------------------------------------------- */
 /* variations */
