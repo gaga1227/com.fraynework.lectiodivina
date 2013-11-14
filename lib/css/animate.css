@@ -86,6 +86,36 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-o-animation-name: shake;
 	animation-name: shake;
 }
+@-webkit-keyframes shakeVert {
+	0%, 100% {-webkit-transform: translateY(0);}
+	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateY(-10px);}
+	20%, 40%, 60%, 80% {-webkit-transform: translateY(10px);}
+}
+
+@-moz-keyframes shakeVert {
+	0%, 100% {-moz-transform: translateY(0);}
+	10%, 30%, 50%, 70%, 90% {-moz-transform: translateY(-10px);}
+	20%, 40%, 60%, 80% {-moz-transform: translateY(10px);}
+}
+
+@-o-keyframes shakeVert {
+	0%, 100% {-o-transform: translateY(0);}
+	10%, 30%, 50%, 70%, 90% {-o-transform: translateY(-10px);}
+	20%, 40%, 60%, 80% {-o-transform: translateY(10px);}
+}
+
+@keyframes shakeVert {
+	0%, 100% {transform: translateY(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateY(-10px);}
+	20%, 40%, 60%, 80% {transform: translateY(10px);}
+}
+
+.shakeVert {
+	-webkit-animation-name: shakeVert;
+	-moz-animation-name: shakeVert;
+	-o-animation-name: shakeVert;
+	animation-name: shakeVert;
+}
 @-webkit-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
 	40% {-webkit-transform: translateY(-30px);}

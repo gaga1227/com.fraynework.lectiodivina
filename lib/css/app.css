@@ -148,7 +148,9 @@ body {
 /* -------------------------------------------------------------------------- */
 /* container */
 .pageNav {
-	position:absolute; top:50%; left:0; width:50px; height:100px; margin:-50px 0 0 0; padding:0; overflow:hidden; }
+	position:absolute; top:50%; left:0; width:50px; height:100px; margin:-50px 0 0 0; padding:0; overflow:hidden;
+	-webkit-transition:-webkit-transform 0.3s ease-in-out;
+	transition:transform 0.3s ease-in-out; }
 
 	/* navItem */
 	.pageNav .navItem {
@@ -280,9 +282,13 @@ body {
 	.contentView h2				{ font-family:'LeagueGothic',sans-serif; font-weight:400; }
 	
 	.contentView h1.deco		{ 
-		display:inline-block; margin:0 0 0.8em 0;
+		display:inline-block; margin:1px 0 0.8em 0;
 		border:1px solid rgba(255,255,255,0.5); border-left:none; border-right:none;
 		font-family:'alegreya',serif; font-size:30px; font-style:italic; line-height:1.6em; }
+		
+	.contentView h1.landing		{ 
+		margin:50px 0 25px 0; text-transform:uppercase;
+		font-size:80px; line-height:0.9em; }
 
 	/* text */
 	.contentView strong 		{ font-weight:600; }
@@ -385,7 +391,7 @@ section,
 /* -------------------------------------------------------------------------- */
 /* btnBox */
 .btnBox {
-	display:inline-block; position:relative; width:auto; height:20px; margin:5px; padding:8px 18px; overflow:hidden;
+	display:inline-block; position:relative; width:auto; height:20px; margin:0; padding:8px 18px; overflow:hidden;
 	color:rgba(255,255,255,0.5)!important; border:1px solid rgba(255,255,255,0.5); white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
 	font-family:'Alegreya',serif; font-size:13px; font-weight:400; line-height:20px;
 	text-decoration:none!important; }
@@ -446,8 +452,8 @@ section,
 	#pgHome .intro > * {
 		opacity:0;
 		/*transform*/
-		-webkit-transform:translate(0,-20px);
-		transform:translate(0,-20px);
+		-webkit-transform:translate3d(0,-20px,0);
+		transform:translate3d(0,-20px,0);
 		/*transition*/
 		-webkit-transition:all 1s ease-out;
 		transition:all 1s ease-out; }
@@ -456,8 +462,8 @@ section,
 	#pgHome .intro.active > * {
 		opacity:1;
 		/*transform*/
-		-webkit-transform:translate(0,0);
-		transform:translate(0,0); }
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0); }
 	#pgHome .intro.active > *:nth-child(1) { /*-webkit-transition-delay:0.2s; transition-delay:0.2s;*/ }
 	#pgHome .intro.active > *:nth-child(2) { /*-webkit-transition-delay:0.25s; transition-delay:0.25s;*/ }
 
@@ -577,7 +583,9 @@ section,
 
 			/* -------------------------------------------------------------------------- */
 			/* pageHeader */
-			#pgWeeks .pageHeader { }
+			#pgWeeks .pageHeader { 
+				-webkit-transition:-webkit-transform 0s ease-in-out, opacity 0s ease-in-out;
+				transition:transform 0s ease-in-out, opacity 0s ease-in-out; }
    				
 				/* headerTitle */
 				#pgWeeks .pageHeader .headerTitle { }
@@ -586,7 +594,11 @@ section,
 			/* pageContent */
 			#pgWeeks .pageHeader + .pageContent { 
 				-webkit-perspective:800px; perspective:800px;
-				-webkit-transform-style:preserve-3d; transform-style:preserve-3d; }
+				-webkit-transform-style:preserve-3d; transform-style:preserve-3d;
+				/*transition*/
+				/*-webkit-transform:translate3d(0,0,0);*/
+				-webkit-transition:top 0s ease-in-out;
+				transition:top 0s ease-in-out; }
 			
 				/* scroller */
 				#pgWeeks .pageContent > [data-role="article"] > .scroller { 
@@ -595,6 +607,37 @@ section,
 				/* padded */
 				#pgWeeks .pageContent > [data-role="article"] > .scroller > .padded {  }
 			
+/* -------------------------------------------------------------------------- */
+/* landing */
+
+/* page */
+#pgWeeks[data-landing="1"] .pageHeader { opacity:0; }
+#pgWeeks[data-landing="1"] .pageHeader + .pageContent { top:0; }
+
+/* pageNav */
+#pgWeeks[data-landing="1"] .pageNav { -webkit-transform:translate3d(-200%,0,0); transform:translate3d(-200%,0,0); }
+
+	/* -------------------------------------------------------------------------- */
+	/* articleContent */
+	#pgWeeks [data-role="articleContent"].padded { padding:0 0 0 100px; }
+	
+		/* articleNav */
+		#pgWeeks [data-role="articleContent"] .articleNav,
+		#pgWeeks [data-role="articleContent"] .articleNav li { 
+			width:auto; height:auto; margin:0; padding:0;
+			list-style:none;
+			font-size:20px; font-style:italic; }
+			
+			/* a */
+			#pgWeeks [data-role="articleContent"] .articleNav a { 
+				text-decoration:none; }
+			#pgWeeks [data-role="articleContent"] .articleNav a.active { 
+				text-decoration:underline; }
+		
+		/* btnJumpArticle */
+		#pgWeeks [data-role="articleContent"] .btnJumpArticle {
+			position:absolute; bottom:60px; left:100px; }
+
 
 /* ==========================================================================
    Common Styles
