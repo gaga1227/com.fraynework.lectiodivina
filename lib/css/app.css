@@ -640,8 +640,8 @@ section,
 			#pgWeeks [data-role="articleContent"] .articleNav a.active { 
 				text-decoration:underline; }
 		
-		/* btnJumpArticle */
-		#pgWeeks [data-role="articleContent"] .btnJumpArticle {
+		/* btnBottomFixed */
+		#pgWeeks [data-role="articleContent"] .btnBottomFixed {
 			position:absolute; bottom:60px; left:100px; }
 
 
