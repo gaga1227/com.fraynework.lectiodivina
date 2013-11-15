@@ -148,10 +148,11 @@ body {
 /* -------------------------------------------------------------------------- */
 /* container */
 .pageNav {
-	position:absolute; top:50%; left:0; width:50px; height:100px; margin:-50px 0 0 0; padding:0; overflow:hidden;
+	position:absolute; top:50%; left:0; width:50px; height:150px; margin:-75px 0 0 0; padding:0; overflow:hidden;
 	-webkit-transition:-webkit-transform 0.3s ease-in-out;
 	transition:transform 0.3s ease-in-out; }
 
+	/* -------------------------------------------------------------------------- */
 	/* navItem */
 	.pageNav .navItem {
 		display:block; position:relative; width:50px; height:50px; margin:0; padding:0; overflow:hidden;
@@ -172,13 +173,29 @@ body {
 	.pageNav .navItem.disabled.active { 
 		color:#666; background:#252525; border-color:rgba(255,255,255,0.15);
 		pointer-events:none; cursor:default; }
-
-
-/* ==========================================================================
-   structure - PAGETITLE
-   ========================================================================== */
-
-/* fixed content right before page content */
+		
+	/* -------------------------------------------------------------------------- */
+	/* btnAudio */
+	
+	/* status - normal */
+	.pageNav .navItem.btnAudio .statusOn 				{ display:block; }
+	.pageNav .navItem.btnAudio .statusOff 				{ display:none; }
+	.pageNav .navItem.btnAudio .statusDisable 			{ display:none; }
+	
+	/* status - running */
+	.pageNav .navItem.btnAudio.running .statusOn 		{ display:none; }
+	.pageNav .navItem.btnAudio.running .statusOff 		{ display:block; }
+	.pageNav .navItem.btnAudio.running .statusDisable 	{ display:none; }
+	
+	/* status - stopped */
+	.pageNav .navItem.btnAudio.stopped .statusOn 		{ display:block; }
+	.pageNav .navItem.btnAudio.stopped .statusOff 		{ display:none; }
+	.pageNav .navItem.btnAudio.stopped .statusDisable 	{ display:none; }
+	
+	/* status - disbaled */
+	.pageNav .navItem.btnAudio.disabled .statusOn 		{ display:none; }
+	.pageNav .navItem.btnAudio.disabled .statusOff 		{ display:none; }
+	.pageNav .navItem.btnAudio.disabled .statusDisable 	{ display:block; }
 
 
 /* ==========================================================================
