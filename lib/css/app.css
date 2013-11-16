@@ -178,24 +178,24 @@ body {
 	/* btnAudio */
 	
 	/* status - normal */
-	.pageNav .navItem.btnAudio .statusOn 				{ display:block; }
-	.pageNav .navItem.btnAudio .statusOff 				{ display:none; }
-	.pageNav .navItem.btnAudio .statusDisable 			{ display:none; }
+	.pageNav .navItem.btnAudio #statusOn 				{ display:block; }
+	.pageNav .navItem.btnAudio #statusOff 				{ display:none; }
+	.pageNav .navItem.btnAudio #statusDisable 			{ display:none; }
 	
 	/* status - running */
-	.pageNav .navItem.btnAudio.running .statusOn 		{ display:none; }
-	.pageNav .navItem.btnAudio.running .statusOff 		{ display:block; }
-	.pageNav .navItem.btnAudio.running .statusDisable 	{ display:none; }
+	.pageNav .navItem.btnAudio.running #statusOn 		{ display:none; }
+	.pageNav .navItem.btnAudio.running #statusOff 		{ display:block; }
+	.pageNav .navItem.btnAudio.running #statusDisable 	{ display:none; }
 	
 	/* status - stopped */
-	.pageNav .navItem.btnAudio.stopped .statusOn 		{ display:block; }
-	.pageNav .navItem.btnAudio.stopped .statusOff 		{ display:none; }
-	.pageNav .navItem.btnAudio.stopped .statusDisable 	{ display:none; }
+	.pageNav .navItem.btnAudio.stopped #statusOn 		{ display:block; }
+	.pageNav .navItem.btnAudio.stopped #statusOff 		{ display:none; }
+	.pageNav .navItem.btnAudio.stopped #statusDisable 	{ display:none; }
 	
 	/* status - disbaled */
-	.pageNav .navItem.btnAudio.disabled .statusOn 		{ display:none; }
-	.pageNav .navItem.btnAudio.disabled .statusOff 		{ display:none; }
-	.pageNav .navItem.btnAudio.disabled .statusDisable 	{ display:block; }
+	.pageNav .navItem.btnAudio.disabled #statusOn 		{ display:none; }
+	.pageNav .navItem.btnAudio.disabled #statusOff 		{ display:none; }
+	.pageNav .navItem.btnAudio.disabled #statusDisable 	{ display:block; }
 
 
 /* ==========================================================================
