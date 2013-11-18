@@ -28,12 +28,12 @@
    fwicon classes
    ----------------------------------------------------------------------------------- */
    
-.fwicon-star:before 			{ content: "\e601"; }
-.fwicon-speaker-on:before 		{ content: "\e600"; }
+.fwicon-star:before 			{ content: "\e603"; }
+.fwicon-speaker-on:before 		{ content: "\e608"; }
 .fwicon-speaker-off:before		{ content: "\e602"; }
-.fwicon-speaker-disable:before	{ content: "\e603"; }
+.fwicon-speaker-disable:before	{ content: "\e610"; }
 .fwicon-quotes:before 			{ content: "\e604"; }
 .fwicon-info:before 			{ content: "\e605"; }
 .fwicon-home:before 			{ content: "\e606"; }
 .fwicon-crown:before 			{ content: "\e607"; }
-.fwicon-book:before 			{ content: "\e608"; }
+.fwicon-book:before 			{ content: "\e609"; }

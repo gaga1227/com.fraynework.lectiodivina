@@ -149,31 +149,36 @@ body {
 /* -------------------------------------------------------------------------- */
 /* container */
 .pageNav {
-	position:absolute; top:50%; left:0; width:50px; height:150px; margin:-75px 0 0 0; padding:0; overflow:hidden;
+	position:absolute; top:50%; left:16px; width:35px; height:140px; margin:-70px 0 0 0; padding:0; overflow:hidden;
 	-webkit-transition:-webkit-transform 0.3s ease-in-out;
 	transition:transform 0.3s ease-in-out; }
 
 	/* -------------------------------------------------------------------------- */
 	/* navItem */
 	.pageNav .navItem {
-		display:block; position:relative; width:50px; height:50px; margin:0; padding:0; overflow:hidden;
-		color:#fff; background:#252525; border-top:1px solid rgba(255,255,255,0.15);
-		/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
-	.pageNav .navItem:first-child { 
-		border-top:none; }
+		display:block; position:absolute; left:0; width:35px; height:35px; margin:0; padding:0; overflow:hidden;
+		color:#eff1f4; background:#a8b5c2; 
+		/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
+		/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
+		
+	/* custom */
+	.pageNav .navItem.invert		{ color:#a8b5c2; background:none;  }
+	
+	.pageNav .navItem#articlePrev 	{ top:0; }
+	.pageNav .navItem#articleAudio 	{ top:50%; margin-top:-17px; }
+	.pageNav .navItem#articleNext 	{ bottom:0; }
 		
 		/* icon */
 		.pageNav .navItem .icon { 
 			top:0; left:0; width:100%; height:100%; 
-			font-size:28px; line-height:50px; }
+			font-size:14px; line-height:35px; }
+		.pageNav .navItem.invert .icon { 
+			font-size:26px; }
 		
 	/* interaction */
-	.pageNav .navItem.active { 
-		background:#2899ff; border-color:#2899ff; }
+	.pageNav .navItem.active 			{ color:#fff; background:#5b207b; }
 	.pageNav .navItem.disabled,
-	.pageNav .navItem.disabled.active { 
-		color:#666; background:#252525; border-color:rgba(255,255,255,0.15);
-		pointer-events:none; cursor:default; }
+	.pageNav .navItem.disabled.active 	{ pointer-events:none; cursor:default; }
 		
 	/* -------------------------------------------------------------------------- */
 	/* btnAudio */
@@ -196,7 +201,7 @@ body {
 	/* status - disbaled */
 	.pageNav .navItem.btnAudio.disabled #statusOn 		{ display:none; }
 	.pageNav .navItem.btnAudio.disabled #statusOff 		{ display:none; }
-	.pageNav .navItem.btnAudio.disabled #statusDisable 	{ display:block; }
+	.pageNav .navItem.btnAudio.disabled #statusDisable 	{ display:block; font-size:32px; }
 
 
 /* ==========================================================================
@@ -694,7 +699,7 @@ section,
 
 /* hide pageNav */
 #pgWeeks.landing .pageNav { 
-	-webkit-transform:translate3d(-120%,0,0); transform:translate3d(-120%,0,0); }
+	-webkit-transform:translate3d(-100px,0,0); transform:translate3d(-100px,0,0); }
 
 	/* -------------------------------------------------------------------------- */
 	/* articleContent */
