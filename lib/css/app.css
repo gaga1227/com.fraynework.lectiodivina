@@ -669,14 +669,25 @@ section,
 	/* -------------------------------------------------------------------------- */
 	/* articleContent */
 	#pgWeeks [data-role="articleContent"].padded { padding:0 0 0 120px; }
-	
-		/* articleNav */
+		
+		/* h1 */
+		#pgWeeks [data-role="articleContent"] h1 { display:none; }
+		
+		/* img */
+		#pgWeeks [data-role="articleContent"] img.h1 { 
+			display:block; width:370px; height:285px; margin:45px 0 0 -110px; }
+		
+		/* articleNav */		
 		#pgWeeks [data-role="articleContent"] .articleNav,
 		#pgWeeks [data-role="articleContent"] .articleNav li { 
 			width:auto; height:auto; margin:0; padding:0;
 			color:#2e6472; list-style:none;
 			font-size:22px; line-height:1.33em; font-style:italic; }
-			
+		
+		/* top gap */
+		#pgWeeks [data-role="articleContent"] .articleNav 				{ margin-top:40px; }
+		#pgWeeks [data-role="articleContent"] .articleNav#articleNav5 	{ margin-top:-40px; }
+		
 			/* a */
 			#pgWeeks [data-role="articleContent"] .articleNav a { 
 				color:#2e6472!important; text-decoration:none; }
