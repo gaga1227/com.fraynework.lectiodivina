@@ -614,6 +614,11 @@ section,
 				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(5):before { background-image:url(../img/img-letter-5.png); }			
 			
 			/* -------------------------------------------------------------------------- */
+			/* flower */
+			#pgWeeks .sectionWrapper [data-role="section"] .flower { 
+				display:block; position:absolute; bottom:-40px; right:90px; width:550px; height:700px; margin:0; padding:0; }
+			
+			/* -------------------------------------------------------------------------- */
 			/* pageHeader */
 			#pgWeeks .pageHeader { 
 				-webkit-transform-origin:0 0%;
