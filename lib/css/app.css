@@ -616,7 +616,12 @@ section,
 			/* -------------------------------------------------------------------------- */
 			/* flower */
 			#pgWeeks .sectionWrapper [data-role="section"] .flower { 
-				display:block; position:absolute; bottom:-40px; right:90px; width:550px; height:700px; margin:0; padding:0; }
+				display:block; position:absolute; bottom:-40px; right:90px; width:550px; height:700px; margin:0; padding:0;
+				opacity:0;
+				/*transition*/
+				/*-webkit-transform:translate3d(0,0,0);*/
+				-webkit-transition:opacity 0.3s ease-in-out;
+				transition:opacity 0.3s ease-in-out; }
 			
 			/* -------------------------------------------------------------------------- */
 			/* pageHeader */
@@ -644,6 +649,9 @@ section,
 			
 /* -------------------------------------------------------------------------- */
 /* landing */
+
+/* show flower */
+#pgWeeks.landing .sectionWrapper [data-role="section"] .flower { opacity:1; }
 
 /* hide pageHeader */
 #pgWeeks.landing .pageHeader { 
