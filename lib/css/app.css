@@ -75,7 +75,7 @@ body {
 		
 	/* current */
 	#nav .navItem.current { 
-		color:#fff; background:url(../img/bg-nav.jpg) center center repeat-x; background-size:226px 45px;
+		color:#fff; background:url(../img/bg-nav@1x.jpg) center center repeat-x; background-size:226px 45px;
 		pointer-events:none; cursor:default; }	
 	
 	/* -------------------------------------------------------------------------- */
@@ -455,7 +455,7 @@ section,
 /* -------------------------------------------------------------------------- */
 /* pageBg */
 #pgHome .pageBg { 
-	background-image:url(../img/bg-home.jpg); background-position:center top; }
+	background-image:url(../img/bg-home@1x.jpg); background-position:center top; }
 
 /* -------------------------------------------------------------------------- */
 /* intro */
@@ -532,7 +532,7 @@ section,
 /* navExtra */
 #pgHome .navExtra { 
 	position:absolute; bottom:0; left:0; width:100%; height:auto; margin:0 auto; padding:0; text-align:center; overflow:hidden;
-	background:#2b2b2b url(../img/bg-home-footer.jpg) center center no-repeat; background-size:cover; 
+	background:#2b2b2b url(../img/bg-home-footer@1x.jpg) center center no-repeat; background-size:cover; 
 	/*transition*/
 	-webkit-transition:all 1.6s ease-in-out;
 	transition:all 1.6s ease-in-out;
@@ -593,11 +593,11 @@ section,
 			-webkit-transform-style:preserve-3d; transform-style:preserve-3d; }
 		
 		/* section bgs */
-		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(1) { background-image:url(../img/bg-w1.jpg); }
-		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(2) { background-image:url(../img/bg-w2.jpg); }
-		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(3) { background-image:url(../img/bg-w3.jpg); }
-		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(4) { background-image:url(../img/bg-w4.jpg); }
-		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(5) { background-image:url(../img/bg-w5.jpg); }
+		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(1) { /*background-color:#e8e8e8;*/ background-image:url(../img/bg-w1@1x.jpg); }
+		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(2) { /*background-color:#f2f2f2;*/ background-image:url(../img/bg-w2@1x.jpg); }
+		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(3) { /*background-color:#e8e8e8;*/ background-image:url(../img/bg-w3@1x.jpg); }
+		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(4) { /*background-color:#f2f2f2;*/ background-image:url(../img/bg-w4@1x.jpg); }
+		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(5) { /*background-color:#e8e8e8;*/ background-image:url(../img/bg-w5@1x.jpg); }
 			
 			/* -------------------------------------------------------------------------- */
 			/* letter */
@@ -607,11 +607,11 @@ section,
 				background:transparent center center no-repeat; background-size:165px 215px; }
 				
 				/* custom */
-				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(1):before { background-image:url(../img/img-letter-1.png); }
-				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(2):before { background-image:url(../img/img-letter-2.png); }
-				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(3):before { background-image:url(../img/img-letter-3.png); }
-				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(4):before { background-image:url(../img/img-letter-4.png); }
-				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(5):before { background-image:url(../img/img-letter-5.png); }			
+				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(1):before { background-image:url(../img/img-letter-1@1x.png); }
+				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(2):before { background-image:url(../img/img-letter-2@1x.png); }
+				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(3):before { background-image:url(../img/img-letter-3@1x.png); }
+				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(4):before { background-image:url(../img/img-letter-4@1x.png); }
+				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(5):before { background-image:url(../img/img-letter-5@1x.png); }		
 			
 			/* -------------------------------------------------------------------------- */
 			/* flower */
@@ -694,7 +694,7 @@ section,
 
 /* -------------------------------------------------------------------------- */
 /* container bg */
-#nav.extra + #container { background-image:url(../img/bg-extra.jpg); background-position:center top; }
+#nav.extra + #container { background-image:url(../img/bg-extra@1x.jpg); background-position:center top; }
 
 
 /* ==========================================================================
