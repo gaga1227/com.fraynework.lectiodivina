@@ -138,8 +138,8 @@ body {
 	/* headerTitle */
 	.pageHeader .headerTitle {
 		display:block; width:auto; height:auto; margin:0 180px 0 120px; padding:0; overflow:hidden;
-		color:#7f439b; white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
-		font-family:'LeagueGothic',sans-serif; font-size:52px; font-weight:400; line-height:190px; }
+		color:#6e2f8b; white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
+		font-family:'LeagueGothic',sans-serif; font-size:52px; font-weight:400; line-height:165px; }
 
 
 /* ==========================================================================
@@ -297,8 +297,8 @@ body {
 	
 	.contentView h1.deco		{ 
 		display:inline-block; margin:1px 0 0.8em 0;
-		border:1px solid rgba(255,255,255,0.5); border-left:none; border-right:none;
-		font-family:'alegreya',serif; font-size:30px; font-style:italic; line-height:1.6em; }
+		color:#333; border:1px solid rgba(0,0,0,0.5); border-left:none; border-right:none;
+		font-family:'alegreya',serif; font-size:28px; font-style:italic; line-height:1.6em; }
 		
 	.contentView h1.landing		{ 
 		margin:130px 0 25px 0; text-transform:uppercase;
@@ -425,6 +425,36 @@ section,
 
 /* interaction */
 .btnBox.active { color:#fff!important; background:#333; border-color:#333; }
+
+/* -------------------------------------------------------------------------- */
+/* btnCircle */
+.btnCircle {
+	display:block; position:relative; width:75px; height:75px; margin:0; padding:0; overflow:hidden;
+	color:#fff!important; background:#6d378b url(../img/bg-btn-circle@1x.jpg) center center no-repeat; background-size:75px 75px; 
+	font-family:'LeagueGothic',sans-serif; font-weight:400; 
+	text-transform:uppercase; text-align:center; text-decoration:none!important; 
+	/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
+	/*background-clip*/-moz-background-clip:border; -webkit-background-clip:border; background-clip:border-box; }
+	
+	/* line */
+	.btnCircle:before {
+		content:'';
+		display:block; position:absolute; top:3px; left:3px; width:67px; height:67px; margin:0; padding:0; overflow:hidden;
+		border:1px solid rgba(255,255,255,0.3);
+		/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
+		/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
+	
+	/* label */
+	.btnCircle .label { 
+		display:block; position:relative; margin:25px auto 4px auto;
+		font-size:17px; line-height:1em; text-decoration:none!important; }
+	
+	/* iconInline */
+	.btnCircle .iconInline { position:relative; font-size:12px; vertical-align:text-top; }
+
+/* interaction */
+.btnCircle.active 			{ color:#6d378b!important; }
+.btnCircle.active:before 	{ background:#fff; border:1px solid rgba(255,255,255,1); }
 
 
 /* ==========================================================================
