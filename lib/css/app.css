@@ -690,9 +690,9 @@ section,
 		
 			/* a */
 			#pgWeeks [data-role="articleContent"] .articleNav a { 
-				color:#2e6472!important; text-decoration:none; }
+				color:#6e288f!important; text-decoration:none; }
 			#pgWeeks [data-role="articleContent"] .articleNav a.active { 
-				color:#2e6472!important; text-decoration:underline; }
+				color:#6e288f!important; text-decoration:underline; }
 		
 		/* btnBottomFixed */
 		#pgWeeks [data-role="articleContent"] .btnBottomFixed {
