@@ -132,7 +132,7 @@ body {
 /* -------------------------------------------------------------------------- */
 /* container */
 .pageHeader {
-	position:absolute; top:45px; left:0; width:100%; height:160px; margin:0; padding:0; overflow:hidden; }
+	position:absolute; top:45px; left:0; width:100%; height:120px; margin:0; padding:0; overflow:hidden; }
 
 	/* -------------------------------------------------------------------------- */
 	/* headerTitle */
@@ -214,12 +214,15 @@ body {
 /* container */
 .pageContent {
 	position:absolute; top:0; left:0; bottom:0; width:100%; height:auto; margin:0; padding:0; overflow:hidden; }
-.pageHeader + .pageContent 	{ top:205px; }
+.pageHeader + .pageContent 	{ top:165px; }
 
 	/* -------------------------------------------------------------------------- */
 	/* scroller */
 	.pageContent > .scroller {
-		position:absolute; top:0; left:0; bottom:0; width:100%; }
+		position:absolute; top:0; left:0; bottom:0; width:100%;
+		/* mask image */
+		/*background:linear-gradient(to bottom, black 0%, cyan 5%, cyan 90%, black 100%);*/
+		-webkit-mask-image:linear-gradient(to bottom, transparent 0%, white 5%, white 90%, transparent 100%); }
 
 
 /* ==========================================================================
@@ -384,7 +387,7 @@ section,
 
 /* padded box */
 .padded {
-	padding:0 180px 40px 120px;
+	padding:20px 180px 60px 120px;
 	/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 
 
@@ -683,7 +686,10 @@ section,
 			
 				/* scroller */
 				#pgWeeks .pageContent > [data-role="article"] > .scroller { 
-					position:absolute; top:0; left:0; bottom:0; width:100%; }
+					position:absolute; top:0; left:0; bottom:0; width:100%;
+					/* mask image */
+					/*background:linear-gradient(to bottom, black 0%, cyan 5%, cyan 90%, black 100%);*/
+					-webkit-mask-image:linear-gradient(to bottom, transparent 0%, white 5%, white 90%, transparent 100%); }
 					
 				/* padded */
 				#pgWeeks .pageContent > [data-role="article"] > .scroller > .padded {  }
