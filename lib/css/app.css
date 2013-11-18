@@ -221,8 +221,8 @@ body {
 	.pageContent > .scroller {
 		position:absolute; top:0; left:0; bottom:0; width:100%;
 		/* mask image */
-		/*background:linear-gradient(to bottom, black 0%, cyan 5%, cyan 90%, black 100%);*/
-		-webkit-mask-image:linear-gradient(to bottom, transparent 0%, white 5%, white 90%, transparent 100%); }
+		/*background:-webkit-linear-gradient(top, transparent 0%, white 5%, white 90%, transparent 100%)*/
+		-webkit-mask-image:-webkit-linear-gradient(top, transparent 0%, white 5%, white 90%, transparent 100%); }
 
 
 /* ==========================================================================
@@ -634,7 +634,9 @@ section,
 			background:#fff center top no-repeat; background-size:cover;
 			white-space:normal;
 			-webkit-perspective:800px; perspective:800px;
-			-webkit-transform-style:preserve-3d; transform-style:preserve-3d; }
+			-webkit-transform-style:preserve-3d; transform-style:preserve-3d;
+			/* kills css transform flickering */
+			-webkit-backface-visibility:hidden; backface-visibility:hidden; }
 		
 		/* section bgs */
 		#pgWeeks .sectionWrapper [data-role="section"]:nth-child(1) { /*background-color:#e8e8e8;*/ background-image:url(../img/bg-w1@1x.jpg); }
@@ -688,8 +690,8 @@ section,
 				#pgWeeks .pageContent > [data-role="article"] > .scroller { 
 					position:absolute; top:0; left:0; bottom:0; width:100%;
 					/* mask image */
-					/*background:linear-gradient(to bottom, black 0%, cyan 5%, cyan 90%, black 100%);*/
-					-webkit-mask-image:linear-gradient(to bottom, transparent 0%, white 5%, white 90%, transparent 100%); }
+					/*background:-webkit-linear-gradient(top, transparent 0%, white 5%, white 90%, transparent 100%)*/
+					-webkit-mask-image:-webkit-linear-gradient(top, transparent 0%, white 5%, white 90%, transparent 100%); }
 					
 				/* padded */
 				#pgWeeks .pageContent > [data-role="article"] > .scroller > .padded {  }
