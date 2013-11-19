@@ -1,4 +1,4 @@
-4/* ==========================================================================
+/* ==========================================================================
    Base styles: opinionated defaults
    Author: JX 20130127 (Adapted from HTML5 Boilerplate 4)
    ========================================================================== */
@@ -467,6 +467,9 @@ section,
 /* interaction */
 .btnCircle.active 			{ color:#6d378b!important; }
 .btnCircle.active:before 	{ background:#fff; border:1px solid rgba(255,255,255,1); }
+
+/* custom */
+.btnCircle:not(.btnBottomFixed) { margin:50px 0 30px 0!important; }
 
 /* -------------------------------------------------------------------------- */
 /* btnLogo */
