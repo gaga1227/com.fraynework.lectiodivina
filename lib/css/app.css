@@ -331,10 +331,10 @@ body {
 	/* list */
 	.contentView li 			{ font-size:22px; line-height:1.5em; margin:0 0 0 0; }
 	.contentView ol,
-	.contentView ul				{ margin:0 0 1em 0; padding:0 0 0 20px; }
+	.contentView ul				{ margin:0 0 1em 8px; padding:0 0 0 20px; }
 	.contentView ul				{ list-style-type:disc; }
 	.contentView li ol,
-	.contentView li ul			{ margin:1em 0 0 0; }
+	.contentView li ul			{ margin:1em 0 0 8px; }
 
 	/* -------------------------------------------------------------------------- */
 	/* text styles */
@@ -404,7 +404,6 @@ section,
 
 /* mask */
 .scroller.mask {
-	/*background:-webkit-linear-gradient(top, red 0%, cyan 5%, cyan 90%, red 100%)*/
 	-webkit-mask-image:-webkit-linear-gradient(top, transparent 0%, white 5%, white 90%, transparent 100%); }
 
 
