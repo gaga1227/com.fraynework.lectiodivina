@@ -219,11 +219,8 @@ body {
 	/* -------------------------------------------------------------------------- */
 	/* scroller */
 	.pageContent > .scroller {
-		position:absolute; top:0; left:0; bottom:0; width:100%;
-		/* mask image */
-		/*background:-webkit-linear-gradient(top, transparent 0%, white 5%, white 90%, transparent 100%)*/
-		-webkit-mask-image:-webkit-linear-gradient(top, transparent 0%, white 5%, white 90%, transparent 100%); }
-
+		position:absolute; top:0; left:0; bottom:0; width:100%; }
+		
 
 /* ==========================================================================
    common - LOADER
@@ -404,6 +401,11 @@ section,
 	[data-role="scrollerContent"] {
 		position:absolute; z-index:1;
 		-webkit-transform:translateZ(0); transform:translateZ(0); }
+
+/* mask */
+.scroller.mask {
+	/*background:-webkit-linear-gradient(top, red 0%, cyan 5%, cyan 90%, red 100%)*/
+	-webkit-mask-image:-webkit-linear-gradient(top, transparent 0%, white 5%, white 90%, transparent 100%); }
 
 
 /* ==========================================================================
@@ -688,10 +690,7 @@ section,
 			
 				/* scroller */
 				#pgWeeks .pageContent > [data-role="article"] > .scroller { 
-					position:absolute; top:0; left:0; bottom:0; width:100%;
-					/* mask image */
-					/*background:-webkit-linear-gradient(top, transparent 0%, white 5%, white 90%, transparent 100%)*/
-					-webkit-mask-image:-webkit-linear-gradient(top, transparent 0%, white 5%, white 90%, transparent 100%); }
+					position:absolute; top:0; left:0; bottom:0; width:100%; }
 					
 				/* padded */
 				#pgWeeks .pageContent > [data-role="article"] > .scroller > .padded {  }
