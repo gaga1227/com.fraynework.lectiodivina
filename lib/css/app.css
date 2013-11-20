@@ -76,7 +76,7 @@ body {
 	/* current */
 	#nav .navItem.current { 
 		color:#fff; background:url(../img/bg-nav@1x.jpg) center center repeat-x; background-size:226px 45px;
-		pointer-events:none; cursor:default; }	
+		pointer-events:none; cursor:default; }
 	
 	/* -------------------------------------------------------------------------- */
 	/* btnMenu */
