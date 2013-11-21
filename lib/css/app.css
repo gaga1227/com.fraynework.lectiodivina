@@ -512,7 +512,7 @@ section,
 /* -------------------------------------------------------------------------- */
 /* intro */
 #pgHome .intro { 
-	display:block; width:340px; height:100px; margin:7% auto 0 auto;
+	display:block; width:340px; height:100px; margin:8% auto 0 auto;
 	opacity:0;
 	/*transform*/
 	-webkit-transform:translate3d(0,-20px,0) scale(1.1);
@@ -531,13 +531,13 @@ section,
 /* responsive - widescreen */
 @media only screen and (min-aspect-ratio: 42/30) {
 	/* move intro up */
-	#pgHome .intro { width:auto; height:90px; margin:6% auto 0 auto; }
+	#pgHome .intro { width:auto; height:90px; margin:5% auto 0 auto; }
 }
 
 /* -------------------------------------------------------------------------- */
 /* nav */
 #pgHome .nav {
-	display:block; position:absolute; top:50%; left:50%; width:940px; height:320px; margin:-135px 0 0 -470px; padding:0; overflow:hidden;
+	display:block; position:absolute; top:50%; left:50%; width:940px; height:320px; margin:-140px 0 0 -470px; padding:0; overflow:hidden;
 	background:transparent url(../img/bg-home-nav.png) center top no-repeat; background-size:940px 215px;
 	opacity:0;
 	/*transition*/
@@ -559,11 +559,9 @@ section,
 
 /* responsive - widescreen */
 @media only screen and (min-aspect-ratio: 42/30) {
-	/* scale nav to fit */
-	#pgHome .nav.active { 
-		/*transform*/
-		-webkit-transform:scale(0.9);
-		transform:scale(0.9); }
+	/* fit nav */
+	#pgHome .nav 		{ margin-top:-135px; } 
+	#pgHome .nav.active { -webkit-transform:scale(0.9); transform:scale(0.9); }
 }
 
 	/* -------------------------------------------------------------------------- */
