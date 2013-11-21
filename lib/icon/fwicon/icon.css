@@ -29,12 +29,13 @@
    fwicon classes
    ----------------------------------------------------------------------------------- */
    
-.fwicon-star:before 			{ content: "\e009"; }
-.fwicon-speaker-on:before 		{ content: "\e000"; }
-.fwicon-speaker-off:before		{ content: "\e002"; }
-.fwicon-speaker-disable:before	{ content: "\e008"; }
-.fwicon-quotes:before 			{ content: "\e003"; }
-.fwicon-info:before 			{ content: "\e004"; }
-.fwicon-home:before 			{ content: "\e005"; }
-.fwicon-crown:before 			{ content: "\e006"; }
-.fwicon-book:before 			{ content: "\e007"; }
+.fwicon-dummy:before 			{ content: "\e000"; }
+.fwicon-crown:before 			{ content: "\e001"; }
+.fwicon-book:before 			{ content: "\e002"; }
+.fwicon-star:before 			{ content: "\e003"; }
+.fwicon-speaker-on:before 		{ content: "\e004"; }
+.fwicon-speaker-off:before 		{ content: "\e005"; }
+.fwicon-speaker-disable:before 	{ content: "\e006"; }
+.fwicon-quotes:before 			{ content: "\e007"; }
+.fwicon-info:before 			{ content: "\e008"; }
+.fwicon-home:before 			{ content: "\e009"; }
