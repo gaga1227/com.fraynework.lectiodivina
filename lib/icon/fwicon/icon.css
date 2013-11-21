@@ -29,7 +29,7 @@
    fwicon classes
    ----------------------------------------------------------------------------------- */
    
-.fwicon-star:before 			{ content: "\e001"; }
+.fwicon-star:before 			{ content: "\e009"; }
 .fwicon-speaker-on:before 		{ content: "\e000"; }
 .fwicon-speaker-off:before		{ content: "\e002"; }
 .fwicon-speaker-disable:before	{ content: "\e008"; }
