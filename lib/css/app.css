@@ -409,8 +409,17 @@ section,
 	-webkit-mask-image:-webkit-linear-gradient(top, transparent 0%, white 5%, white 90%, transparent 100%); }
 
 /* IScroll */
-.iScrollVerticalScrollbar { width:5px!important; right:2px!important; opacity:0.6!important; }
+.iScrollVerticalScrollbar 				{ width:5px!important; right:2px!important; opacity:0.6!important; }
 .inTransition .iScrollVerticalScrollbar { opacity:0!important; }
+	
+	.iScrollVerticalScrollbar .iScrollIndicator { 
+		/* kills css transform glitch line */
+		-webkit-backface-visibility:hidden; backface-visibility:hidden; }
+
+/* FTScroller */
+.ftscroller_hwaccelerated { 
+	/* kills css transform glitch line */
+	-webkit-backface-visibility:hidden; backface-visibility:hidden; }
 
 
 /* ==========================================================================
