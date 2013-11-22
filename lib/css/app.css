@@ -151,7 +151,9 @@ body {
 .pageNav {
 	position:absolute; top:50%; left:16px; width:35px; height:140px; margin:-70px 0 0 0; padding:0; overflow:hidden;
 	-webkit-transition:-webkit-transform 0.3s ease-in-out;
-	transition:transform 0.3s ease-in-out; }
+	transition:transform 0.3s ease-in-out;
+	/* kills android css transform visual glitch */
+	-webkit-backface-visibility:hidden; backface-visibility:hidden; }
 
 	/* -------------------------------------------------------------------------- */
 	/* navItem */
@@ -525,12 +527,14 @@ section,
 #pgHome .intro { 
 	display:block; width:340px; height:100px; margin:8% auto 0 auto;
 	opacity:0;
-	/*transform*/
-	-webkit-transform:translate3d(0,-20px,0) scale(1.1);
-	transform:translate3d(0,-20px,0) scale(1.1);
 	/*transition*/
 	-webkit-transition:all 0.8s ease-out;
-	transition:all 0.8s ease-out; }
+	transition:all 0.8s ease-out;
+	/* kills android css transform visual glitch */
+	-webkit-backface-visibility:hidden; backface-visibility:hidden;
+	/*transform*/
+	-webkit-transform:translate3d(0,-20px,0) scale(1.1);
+	transform:translate3d(0,-20px,0) scale(1.1); }
 
 /* transition */
 #pgHome .intro.active {
@@ -557,6 +561,8 @@ section,
 	/*transform-origin*/
 	-webkit-transform-origin:50%;
 	transform-origin:50%;
+	/* kills android css transform visual glitch */
+	-webkit-backface-visibility:hidden; backface-visibility:hidden;
 	/*transform*/
 	-webkit-transform:scale(1.2);
 	transform:scale(1.2); }
@@ -615,6 +621,8 @@ section,
 	/*transform-origin*/
 	-webkit-transform-origin:50%;
 	transform-origin:50%;
+	/* kills android css transform visual glitch */
+	-webkit-backface-visibility:hidden; backface-visibility:hidden;
 	/*transform*/
 	-webkit-transform:translate3d(0,110%,0) scale(1.2);
 	transform:translate3d(0,110%,0) scale(1.2); }
@@ -700,7 +708,6 @@ section,
 				display:block; position:absolute; bottom:-40px; right:90px; width:550px; height:700px; margin:0; padding:0;
 				opacity:0;
 				/*transition*/
-				/*-webkit-transform:translate3d(0,0,0);*/
 				-webkit-transition:opacity 0.3s ease-in-out;
 				transition:opacity 0.3s ease-in-out; }
 			
@@ -710,7 +717,9 @@ section,
 				-webkit-transform-origin:0 0%;
 				transform-origin:0 0%;
 				-webkit-transition:-webkit-transform 0.6s ease-in-out, opacity 0.3s ease-in-out;
-				transition:transform 0.6s ease-in-out, opacity 0.3s ease-in-out; }
+				transition:transform 0.6s ease-in-out, opacity 0.3s ease-in-out;
+				/* kills android css transform visual glitch */
+				-webkit-backface-visibility:hidden; backface-visibility:hidden; }
    				
 				/* headerTitle */
 				#pgWeeks .pageHeader .headerTitle { }
