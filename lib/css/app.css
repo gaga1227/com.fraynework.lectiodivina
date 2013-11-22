@@ -400,7 +400,9 @@ section,
 	/* scrollerContent */
 	[data-role="scrollerContent"] {
 		position:absolute; z-index:1;
-		-webkit-transform:translateZ(0); transform:translateZ(0); }
+		-webkit-transform:translateZ(0); transform:translateZ(0);
+		/* kills css transform glitch line */
+		-webkit-backface-visibility:hidden; backface-visibility:hidden; }
 
 /* mask */
 .ios .scroller.mask {
