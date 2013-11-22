@@ -58,9 +58,11 @@
 										transform:translate3d(0,0,0) scale(0.9) rotate3d(1,0,0,0deg); }
 /* landing articles - android */										
 .android [data-role="article"][data-index="0"].in { 
-										-webkit-transform:translate3d(3%,0,0) scale(1); 
-										transform:translate3d(3%,0,0) scale(1); }
+										opacity:0;
+										-webkit-transform:translate3d(3%,0,0) scale(1.1) rotate3d(1,0,0,0deg); 
+										transform:translate3d(3%,0,0) scale(1.1) rotate3d(1,0,0,0deg); }
 																	
 .android [data-role="article"][data-index="0"].out { 
-										-webkit-transform:translate3d(-3%,0,0) scale(1);
-										transform:translate3d(-3%,0,0) scale(1); }
+										opacity:0;
+										-webkit-transform:translate3d(0,0,0) scale(0.9) rotate3d(1,0,0,0deg); 
+										transform:translate3d(0,0,0) scale(0.9) rotate3d(1,0,0,0deg); }
